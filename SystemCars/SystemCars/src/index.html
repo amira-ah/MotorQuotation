@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SystemCars</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://code.angularjs.org/1.4.3/angular.js"></script>
+ 
+</head>
+<body>
+  <app-root></app-root>
+  <input  type="hidden" id="myHiddenInputNumber">
+  <script type="text/javascript">
+    $('#myHiddenInputNumber').val(1);
+
+    $(document).ready(function(){
+/* JQuery Binding
+
+    $('.ag-paging-panel .ag-paging-page-summary-panel').on('click', '[ref="btNext"]', function (){
+      var page= parseInt($('.ag-paging-panel .ag-paging-page-summary-panel .ag-paging-description [ref="lbCurrent"]').text()) + parseInt($('#myHiddenInputNumber').val()) ;
+      $('#myHiddenInputNumber').val(page);
+      var pageSize=$('.ag-theme-alpine').attr('ng-reflect-pagination-page-size');
+      const agGridComponent = $('ag-grid-angular');
+      //var button = angular.element('.ag-paging-panel .ag-paging-page-summary-panel .ag-paging-description [ref="btNext"]');
+     // button.trigger('click');
+     //
+      const url = 'http://localhost:7093/api/Vehicle/get-car-details?page=' + page + '&pagesize=' + pageSize;
+     $.ajax({
+        url: url,
+        type: 'GET',
+        success: function(response){
+          if(response != 0){
+            console.log("success");
+           // 
+            const rowData = response; 
+           // $('ag-grid-angular').data(rowData);
+           // this.router.navigate(['your-route']); 
+            console.log(rowData);
+          } else {
+            alert('file not uploaded');
+          }
+        },
+        error: function(xhr, status, error) {
+          console.error('Error:', error);
+        }
+      });
+    })*/
+
+  });
+  </script>
+
+
+</body>
+</html>
